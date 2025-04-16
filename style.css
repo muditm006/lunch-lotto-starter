@@ -69,6 +69,17 @@ html, body {
   transform: scale(1.1); /* Slightly enlarge on hover for interactivity */
 }
 
+#open-history img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
+
+#open-history img:hover {
+  transform: scale(1.1);
+}
+
+
 #open-history {
   background: none;
   border: none;
