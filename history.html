@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title shown in the browser tab -->
   <title>Lunch Lotto History</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Main container for the lunch history section -->
   <div class="history-container">
+    <!-- Heading for the history section -->
     <h2>Your Lunch History</h2>
+    
+    <!-- This div will be populated with past lunch entries using JavaScript -->
     <div id="history-list" class="history-list"></div>
+    
+    <!-- Button to clear the lunch history -->
     <button id="clear-history" class="clear-history">Clear History</button>
+    
+    <!-- Button to go back to the main page (presumably where the lunch wheel is) -->
     <button id="back-to-main" class="back-button">Back to Wheel</button>
   </div>
-
   <script src="libs/sweetalert.min.js"></script>
   <script src="history.js"></script>
 </body>
