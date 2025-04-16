@@ -11,6 +11,12 @@
     "action": {
       "default_popup": "popup.html",
       "default_icon": "assets/icon.png"
+    },
+    "web_accessible_resources": [
+    {
+    "resources": ["history.html"],
+    "matches": ["https://*/*", "http://*/*"]
     }
+]
   }
   

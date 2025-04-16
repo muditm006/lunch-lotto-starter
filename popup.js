@@ -1,4 +1,5 @@
 const apiKey = "AIzaSyACKFjtEFbq_Joo-NPi1eMtlMMh1UyFLW8";
+let history = [];
 const defaultSettings = {
   distance: 0.5,       // Default search radius in miles
   price: "2,3",        // Google Places API uses 1-4 ($ - $$$$)
@@ -141,6 +142,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Close settings view
   document.getElementById("close-settings").addEventListener("click", hideSettings);
+
+  document.getElementById("open-history").addEventListener("click", () => {
+    chrome.tabs.create({ url: chrome.runtime.getURL('history.html') });
+  });
 
   // Load saved settings into inputs
   const settings = await loadSettings();

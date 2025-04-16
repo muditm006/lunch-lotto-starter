@@ -159,7 +159,18 @@ function truncateOption(option) {
       const normalizedDegrees = degrees % 360;
       const selectedIndex = Math.floor(normalizedDegrees / (360 / options.length));
       const selectedOption = options[options.length - 1 - selectedIndex];
-        
+      
+      // Add to history
+      history.push({
+        name: selectedOption.name,
+        date: new Date().toLocaleString(),
+        link: selectedOption.googleMapsLink
+      });
+
+// Save history to Chrome storage
+chrome.storage.sync.set({ lunchLottoHistory: history }, () => {
+  console.log('History updated');
+});
       // Motivational messages to encourage the user
       const messages = [
         "Time to fuel your body with something nutritious! 🍎",
