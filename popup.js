@@ -1,4 +1,4 @@
-const apiKey = "AIzaSyDT6Xz3aFLzagVEdWztDo9FxrVWkM8X7fA";
+const apiKey = "AIzaSyACKFjtEFbq_Joo-NPi1eMtlMMh1UyFLW8";
 const defaultSettings = {
   distance: 0.5,       // Default search radius in miles
   price: "2,3",        // Google Places API uses 1-4 ($ - $$$$)
