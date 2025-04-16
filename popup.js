@@ -1,4 +1,5 @@
 const apiKey = "AIzaSyACKFjtEFbq_Joo-NPi1eMtlMMh1UyFLW8";
+// 🗂️ Initialize an empty array to store the lunch history entries
 let history = [];
 const defaultSettings = {
   distance: 0.5,       // Default search radius in miles
@@ -143,6 +144,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Close settings view
   document.getElementById("close-settings").addEventListener("click", hideSettings);
 
+  // 📜 When the "History" button is clicked, open the history.html page in a new browser tab
   document.getElementById("open-history").addEventListener("click", () => {
     chrome.tabs.create({ url: chrome.runtime.getURL('history.html') });
   });

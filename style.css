@@ -200,24 +200,27 @@ background-color:rgb(61, 69, 119);
   font-size: 18px !important; /* Customize the title text size */
 }
 
-/* History Page Styles */
+/* 📜 Container for the History Page */
 .history-container {
   padding: 20px;
   width: 350px;
   max-height: 500px;
-  overflow-y: auto;
+  overflow-y: auto; /* Enables scrolling if history exceeds max height */
 }
 
+/* 🏷️ Title Styling for the History Page */
 .history-container h2 {
   text-align: center;
   color: #007BFF;
   margin-bottom: 20px;
 }
 
+/* 📋 Container for List of History Entries */
 .history-list {
   margin-bottom: 20px;
 }
 
+/* 📌 Individual History Entry Styling */
 .history-item {
   padding: 10px;
   margin-bottom: 10px;
@@ -228,35 +231,41 @@ background-color:rgb(61, 69, 119);
   align-items: center;
 }
 
+/* 🔗 Link to Restaurant in Each History Entry */
 .history-name {
   color: #007BFF;
   text-decoration: none;
   font-weight: bold;
-  flex: 1;
+  flex: 1; /* Allows it to grow and take up space */
 }
 
+/* 📅 Date of the Lunch Lotto Entry */
 .history-date {
   color: #666;
   font-size: 0.8rem;
   margin-left: 10px;
 }
 
+/* 🚫 Message for Empty History */
 .empty-history {
   text-align: center;
   color: #666;
   font-style: italic;
 }
 
+/* 🧹 Clear History Button */
 .clear-history {
   background-color: #ff4444 !important;
   width: 100% !important;
   margin: 10px 0 !important;
 }
 
+/* 🧼 Clear Button Hover State */
 .clear-history:hover {
   background-color: #cc0000 !important;
 }
 
+/* 🔙 Back Button Styling */
 .back-button {
   width: 100% !important;
   margin: 10px 0 !important;
